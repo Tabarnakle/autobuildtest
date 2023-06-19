@@ -3,7 +3,7 @@
 FROM nginx:latest
 # highly recommend you always pin versions for anything beyond dev/learn
 
-ARG CA_CERT
+RUN /bin/bash -c 'echo -e $CA_CERT'
 
 WORKDIR /usr/share/nginx/html
 # change working directory to root of nginx webhost
