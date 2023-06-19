@@ -1,2 +1,2 @@
 #!/bin/bash
-docker buildx build --build-arg CA_CERT=$CA_CERT .
+docker buildx build --build-arg "CA_CERT=$CA_CERT" .
